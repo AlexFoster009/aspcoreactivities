@@ -1,0 +1,9 @@
+/Users/alexanderfoster/csharp/Activities/Domain/bin/Debug/netstandard2.0/Domain.deps.json
+/Users/alexanderfoster/csharp/Activities/Domain/bin/Debug/netstandard2.0/Domain.dll
+/Users/alexanderfoster/csharp/Activities/Domain/bin/Debug/netstandard2.0/Domain.pdb
+/Users/alexanderfoster/csharp/Activities/Domain/obj/Debug/netstandard2.0/Domain.csprojAssemblyReference.cache
+/Users/alexanderfoster/csharp/Activities/Domain/obj/Debug/netstandard2.0/Domain.AssemblyInfoInputs.cache
+/Users/alexanderfoster/csharp/Activities/Domain/obj/Debug/netstandard2.0/Domain.AssemblyInfo.cs
+/Users/alexanderfoster/csharp/Activities/Domain/obj/Debug/netstandard2.0/Domain.csproj.CoreCompileInputs.cache
+/Users/alexanderfoster/csharp/Activities/Domain/obj/Debug/netstandard2.0/Domain.dll
+/Users/alexanderfoster/csharp/Activities/Domain/obj/Debug/netstandard2.0/Domain.pdb

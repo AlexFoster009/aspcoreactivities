@@ -1,0 +1,12 @@
+/Users/alexanderfoster/csharp/Activities/Persistence/bin/Debug/netstandard2.0/Persistence.deps.json
+/Users/alexanderfoster/csharp/Activities/Persistence/bin/Debug/netstandard2.0/Persistence.dll
+/Users/alexanderfoster/csharp/Activities/Persistence/bin/Debug/netstandard2.0/Persistence.pdb
+/Users/alexanderfoster/csharp/Activities/Persistence/bin/Debug/netstandard2.0/Domain.dll
+/Users/alexanderfoster/csharp/Activities/Persistence/bin/Debug/netstandard2.0/Domain.pdb
+/Users/alexanderfoster/csharp/Activities/Persistence/obj/Debug/netstandard2.0/Persistence.csprojAssemblyReference.cache
+/Users/alexanderfoster/csharp/Activities/Persistence/obj/Debug/netstandard2.0/Persistence.AssemblyInfoInputs.cache
+/Users/alexanderfoster/csharp/Activities/Persistence/obj/Debug/netstandard2.0/Persistence.AssemblyInfo.cs
+/Users/alexanderfoster/csharp/Activities/Persistence/obj/Debug/netstandard2.0/Persistence.csproj.CoreCompileInputs.cache
+/Users/alexanderfoster/csharp/Activities/Persistence/obj/Debug/netstandard2.0/Persistence.csproj.CopyComplete
+/Users/alexanderfoster/csharp/Activities/Persistence/obj/Debug/netstandard2.0/Persistence.dll
+/Users/alexanderfoster/csharp/Activities/Persistence/obj/Debug/netstandard2.0/Persistence.pdb
