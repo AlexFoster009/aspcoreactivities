@@ -21,6 +21,8 @@ namespace API
         {
             Configuration = configuration;
         }
+        
+        
 
         public IConfiguration Configuration { get; }
 
@@ -35,6 +37,15 @@ namespace API
                 // as well as the set the database to sue SQLlite.
                 opt.UseSqlite(Configuration.GetConnectionString("Default"));
             });
+            
+            //Add cors support so when can access thisAPI
+            services.AddCors(opt =>
+            {
+                opt.AddPolicy("CorsPolicy", policy =>
+                {
+                    policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:3000");
+                });
+            });
             services.AddControllers();
             
         }
@@ -48,11 +59,15 @@ namespace API
             }
 
             // app.UseHttpsRedirection();
-
+            
+            
+            
             app.UseRouting();
 
             app.UseAuthorization();
-
+            
+            app.UseCors("CorsPolicy");
+            
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
