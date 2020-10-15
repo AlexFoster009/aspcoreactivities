@@ -6,7 +6,6 @@ using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Domain;
 using System;
-using
 using System.Threading;
 
 namespace API.Controllers
@@ -33,9 +32,9 @@ namespace API.Controllers
 
         // create a get request to recieve our list inside out client app.
         [HttpGet]
-        public async Task<ActionResult<List<Activity>>> List(CancellationToken ct)
+        public async Task<ActionResult<List<Activity>>> List()
         {
-            return await _mediator.Send(new List.Query(), ct);
+            return await _mediator.Send(new List.Query());
         }
 
         [HttpGet("{id}")]
@@ -44,6 +43,35 @@ namespace API.Controllers
         public async Task<ActionResult<Activity>> Details(Guid id)
         {
             return await _mediator.Send(new Details.Query{Id = id});
+        }
+
+        // This method will handle the creation of activity entities
+        [HttpPost]
+
+        public async Task<ActionResult<Unit>> Create(Create.Command command)
+        {
+
+            return await _mediator.Send(command);
+        }
+
+        // Controlelr method of edit.
+
+        [HttpPut("{id}")]
+
+        public async Task<ActionResult<Unit>> Edit(Guid id, Edit.Command command)
+        {   
+            command.Id = id;
+            return await _mediator.Send(command);
+        }
+
+        // Delete endpoint
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<Unit>> Delete(Guid id)
+        {
+            // Create a delete command and delete the activity that has the matching ID
+            // From the request.
+
+            return await _mediator.Send(new Delete.Command{Id = id});
         }
 
     }

@@ -1,11 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BRL8RIfvUNEtXzlr9ZU+qJo3Ev7RRjp4UjltZZSxZIG/ulTzNJQdv8nP6UcvNlUHuFgXrvJT3XcNQY5QgsoysA==",
+  "dgSpecHash": "OTDfhLJPlstqLQB6BbTr9MmVlcT6Jcw2QHq8adxLUq/IOJqHXbb1fB36Fohhq7RLwixpG9qVvOeTTdpIfIUV9Q==",
   "success": true,
   "projectFilePath": "/Users/alexanderfoster/csharp/Activities/Domain/Domain.csproj",
-  "expectedPackageFiles": [
-    "/Users/alexanderfoster/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "/Users/alexanderfoster/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

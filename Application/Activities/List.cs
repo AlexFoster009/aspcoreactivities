@@ -21,34 +21,21 @@ namespace Application.Activities
         public class Handler : IRequestHandler<Query, List<Activity>>
         {
             public readonly DataContext _context;
-            private readonly ILogger<List> _logger;
+        
             public Handler(DataContext context, ILogger<List> logger)
             {
-                _logger = logger;
+    
                 _context = context;
             }
             public async Task<List<Activity>> Handle(Query request, CancellationToken cancellationToken)
             {
-                try
-                {
-                    for (var i = 0; i < 10; i++)
-                    {
-                        cancellationToken.ThrowIfCancellationRequested();
-                        await Task.Delay(1000, cancellationToken);
-
-                        _logger.LogInformation($"Task {i} has completed");
-                    }
-                } catch (Exception ex) when (ex is TaskCanceledException){
-
-                    _logger.LogInformation("Task was cancelled");
-                    
-                }
-
+        
 
                 // Get a list of activities and return them.
-                var activities = await _context.Activities.ToListAsync(cancellationToken);
+                var activities = await _context.Activities.ToListAsync();
                 return activities;
             }
+       
         }
     }
 }
