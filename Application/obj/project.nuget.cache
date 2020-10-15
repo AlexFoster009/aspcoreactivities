@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "B6ueTL/lvkD8KRMCLNNN0sUJf2+cW1Ku+WQKOCc+unqvWS4i9JwEbHgVZZN+PQElY70jeh6KwLBH/Hcsc3z9tg==",
+  "dgSpecHash": "giP5OzJ2orWWzky50oVWeLtNRDkox07M+wOwpEFzYsQxI/fCgcpUaCr5cmObWA4Z2SwE736V/JGrCNYZzSMYLA==",
   "success": true,
   "projectFilePath": "/Users/alexanderfoster/csharp/Activities/Application/Application.csproj",
   "expectedPackageFiles": [
+    "/Users/alexanderfoster/.nuget/packages/mediatr/8.1.0/mediatr.8.1.0.nupkg.sha512",
+    "/Users/alexanderfoster/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/8.1.0/mediatr.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",
     "/Users/alexanderfoster/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/Users/alexanderfoster/.nuget/packages/microsoft.bcl.hashcode/1.1.0/microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "/Users/alexanderfoster/.nuget/packages/microsoft.data.sqlite.core/3.1.8/microsoft.data.sqlite.core.3.1.8.nupkg.sha512",

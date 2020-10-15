@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "25n2auL9l5sRxR2PctmqtgvMaTyhARmIYKtvq+q+E2zqtoiZsRvthu18r7UQnauqTNSeY9xU/imQjPB2knGejw==",
+  "dgSpecHash": "GkmpvJvdKQkm6LxXZ2WjhBakUt8RkOUx7o2XwXXxNnva1o0CMo4KSt7YDrMjn1VaOe3wV0d3LPbzmHCYse//Fg==",
   "success": true,
   "projectFilePath": "/Users/alexanderfoster/csharp/Activities/API/API.csproj",
   "expectedPackageFiles": [
+    "/Users/alexanderfoster/.nuget/packages/mediatr/8.1.0/mediatr.8.1.0.nupkg.sha512",
+    "/Users/alexanderfoster/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/8.1.0/mediatr.extensions.microsoft.dependencyinjection.8.1.0.nupkg.sha512",
     "/Users/alexanderfoster/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/Users/alexanderfoster/.nuget/packages/microsoft.bcl.hashcode/1.1.0/microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "/Users/alexanderfoster/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
