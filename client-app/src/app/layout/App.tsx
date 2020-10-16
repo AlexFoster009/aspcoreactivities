@@ -1,36 +1,33 @@
-import React, {Component} from 'react';
+import React, {useState, useEffect} from 'react';
 import Axios from "axios";
 import './styles.css';
 import {Header, Icon, List} from "semantic-ui-react";
+import {IActivity} from "../models/activity";
 
-/*
-    Class componenets allow use to have more control
-    over state and lifeycle of our app.
-    
-    We aregoing to use state to store our data. then use that data to display
-    in our view.
+
+/**
+ * 
+ * @constructor
  */
-class App extends Component {
-    // When the componenet laods it will be an empty state, then when the component
-    // it will set the values array to be used within the component.
+
+const App = () => {
+    /*
+        Create an array that has 2 elements. the state its self as well
+        as a function.
+     */
+    const [activities, setActivities] = useState<IActivity[]>([]);
     
-    state = {
-        values: []
-    }
-    
-    componentDidMount(): void {
-        // Get values from out .Net API.
-        Axios.get('http://localhost:5000/api/values')
+    useEffect(() => {
+        // This will cal our API and use the setActivties function
+        // To populate our state.
+        
+        Axios.get<IActivity>('http://localhost:5000/api/activities')
             .then((response) => {
-                console.log(response)
-
-                this.setState({
-                    values: response.data
-                })
+               setActivities([response.data]);
             });
-    }
-
-    render(): React.ReactNode {
+        
+    }, []); // Empty array is paramount to stop a loop
+    
         return (
             <div>
                 <Header as='h2'>
@@ -39,15 +36,15 @@ class App extends Component {
                 </Header>
                 
                 <List>
-                    {
-                        this.state.values.map((value: any) => (
-                          <List.Item key={value.id}>{value.name}</List.Item>
+                    {activities.map((activity) => (
+                        
+                      <List.Item key={activity.id}>{activity.title}</List.Item>
+                      
                         ))
                     }
                 </List>
             </div>
         );
-    }
 }
 
 export default App;
