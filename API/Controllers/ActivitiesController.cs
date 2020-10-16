@@ -52,6 +52,7 @@ namespace API.Controllers
         {
 
             return await _mediator.Send(command);
+            
         }
 
         // Controlelr method of edit.

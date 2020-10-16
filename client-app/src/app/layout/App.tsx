@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Axios from "axios";
-import './App.css';
+import './styles.css';
 import {Header, Icon, List} from "semantic-ui-react";
 
 /*
